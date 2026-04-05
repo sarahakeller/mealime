@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--
+AI Use Disclosure:
+Tool(s): ChatGPT (free version)
+Purpose: Helped list all of the groceries and sort them into categories
+Human Role: I had to explain that I wanted a check list and to make it centered on the page, this shortened my overall time by pulling the grocery list instead of me having to manually do it. 
+-->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="YOUR DESCRIPTION HERE">
@@ -20,8 +27,8 @@
 <header class="row align-items-center">
 
   <div class="col-md-3 d-flex align-items-center">
-    <img class="img-fluid me-2" src="images/lime.png" alt="mealime logo">
-    <h2 class="mb-0">Mealime</h2>
+    <img class="img-fluid ms-5" src="images/mealime.logo.png" alt="mealime logo">
+    
   </div>
 
   <nav class="col-md-7">
@@ -30,10 +37,10 @@
         <a class="nav-link active" href="#">Meal Plan</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Groceries</a>
+        <a class="nav-link" href="#groceries">Groceries</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Favorites</a>
+        <a class="nav-link" href="#favorites">Favorites</a>
       </li>
     </ul>
   </nav>
@@ -43,14 +50,14 @@
 
 
    <div class="container">
-          <div class="button justify-content-center"> 
-            <div class="offset-md-4 col-md-8">
-          <button type="button" class="btn btn-primary btn-lg start">Start Your Next Meal Plan!</button>
-
-
-          </div> <!-- button div class --> 
-</div> <!--container for button-->
-</div> <!-- end of container-->
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <a href="https://www.mealime.com/recipes" target="_blank" class="btn btn-primary btn-lg start">
+        Start Your Next Meal Plan!
+      </a>
+    </div>
+  </div>
+</div>
           <div class="row justify-content-center">
             <div class="col-md-8">
 
@@ -99,7 +106,9 @@
 <div class="container">
           <div class="button justify-content-center"> 
             <div class="offset-md-4 col-md-8">
-          <button type="button" class="btn btn-primary btn-lg start">Previous Meal Plans</button>
+          <a href="https://app.mealime.com/login" target= "blank" class="btn btn-primary btn-lg start">
+          Previous Meal Plans
+        </a>
 
 
           </div> <!-- button div class --> 
@@ -113,7 +122,8 @@
   <div class="card-body">
     <h2 class="card-title">Korean-Style Beef Rice Bowl</h2>
     <p class="card-text">Korean-Style Beef Rice Bowl with Cucumbers</p>
-    <a href="#" class="btn btn-primary">Recipe</a>
+ 
+    <a href="https://www.mealime.com/recipes/korean-style-beef-rice-bowl-cucumbers/4425" target="_blank" class="btn btn-primary">Recipe</a>
   </div>
 </div>
     <div class="col-md-3">
@@ -121,17 +131,151 @@
  <div class="card-body">
     <h2 class="card-title">Creamy Squash, Kale & Apple Soup</h2>
     <p class="card-text">Creamy Squash, Kale & Apple Soup with Crispy Parmesan Chickpeas</p>
-    <a href="#" class="btn btn-primary">Recipe</a>
+    <a href="https://www.mealime.com/recipes/butternut-squash-soup-pumpkin-seeds-arugula-apple-salad/2128" target="_blank" class="btn btn-primary">Recipe</a>
   </div>
   </div>
 </div>
 
 
+<div id="groceries" class="container">
+
+  
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6"> <!-- controls width -->
+
+      <h2 class="text-center mb-4">Grocery List</h2>
+
+      <!-- Proteins -->
+      <h3 class="mt-3">Proteins</h3>
+      <div class="list-group mb-3">
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Ground beef
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Shrimp
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Kidney beans
+        </label>
+      </div>
+
+      <!--Produce -->
+      <h3>Produce</h3>
+      <div class="list-group mb-3">
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Romaine lettuce
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Tomatoes
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Zucchini
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Cucumber
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Bell peppers
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Onion
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Garlic
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Avocado
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Lime
+        </label>
+      </div>
+
+      <!--Dairy -->
+      <h3>Dairy</h3>
+      <div class="list-group mb-3">
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Shredded cheese
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Parmesan
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Butter
+        </label>
+      </div>
+
+      <!--Grains -->
+      <h3>Grains</h3>
+      <div class="list-group mb-3">
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Pasta
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Tortilla chips
+        </label>
+      </div>
+
+      <!--Pantry -->
+      <h3>Pantry & Seasoning</h3>
+      <div class="list-group mb-3">
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Salsa
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Olive oil
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Taco seasoning
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-2" type="checkbox"> Salt & pepper
+        </label>
+      </div>
+
+  </div>
+
+    </div> <!-- div closing tag for groceries id--> 
+
+
+
+<div id="favorites" class="container">
+    <h2> Your Favorite Recipes</h2>
+
+    <h3> Save recipes you love so that you can cook them again, and again, and again... </h3>
+
+
+
+
+</div> <!-- closing favroites id-->
+
 </div> <!-- closing tag for card and place holders-->
 
 
-    </div> <!--end div container-->
 
+
+
+<footer class="bg-dark text-white mt-5 p-4">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Logo -->
+      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <img src="images/mealime.logo.png" alt="Mealime logo" class="img-fluid">
+      </div>
+       <!-- Footer -->
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <a href="#" class="text-white me-3 text-decoration-none">Home</a>
+        <a href="#groceries" class="text-white me-3 text-decoration-none">Groceries</a>
+        <a href="#favorites" class="text-white text-decoration-none">Favorites</a>
+      </div>
+
+    </div>
+    </div> <!--end div container-->
+  
+</footer>
+</div>
+</div>
 
 
 <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
